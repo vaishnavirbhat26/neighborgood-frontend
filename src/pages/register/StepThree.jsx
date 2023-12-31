@@ -59,7 +59,8 @@ const StepThree = () => {
         <>
             <label htmlFor="goesOutForWalks" className="flex justify-between items-center mt-2 cursor-pointer">
                 <p className="text-sm font-semibold">Do you go out for walks?</p>
-                <select name="goesOutForWalks" id="goesOutForWalks" {...register("goesOutForWalks")}>
+                <select className="flex flex-col gap-0.5 font-poppins relative rounded shadow-md border-white"
+                    name="goesOutForWalks" id="goesOutForWalks" {...register("goesOutForWalks")}>
                     <option value="no">No</option>
                     <option value="yes">Yes</option>
                 </select>
@@ -75,7 +76,7 @@ const StepThree = () => {
             {/* ... other activities */}
             <label htmlFor="goesOutForRuns" className="flex justify-between items-center mt-2 cursor-pointer">
                 <p className="text-sm font-semibold">Do you run?</p>
-                <select name="goesOutForRuns" id="goesOutForRuns" {...register("goesOutForRuns")}>
+                <select className="flex flex-col gap-0.5 font-poppins relative rounded shadow-md border-white" name="goesOutForRuns" id="goesOutForRuns" {...register("goesOutForRuns")}>
                     <option value="no">No</option>
                     <option value="yes">Yes</option>
                 </select>
